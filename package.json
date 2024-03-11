@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/LuisArielRetanaHernadez/framework-css-effects/issues"
   },
-  "homepage": "https://github.com/LuisArielRetanaHernadez/framework-css-effects#readme"
+  "homepage": "https://github.com/LuisArielRetanaHernadez/framework-css-effects#readme",
+  "dependencies": {
+    "sass": "^1.71.1"
+  }
 }
