@@ -1,0 +1,19 @@
+{
+  "name": "mabi-animate",
+  "version": "1.0.0",
+  "description": "clases y elementos animados",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuisArielRetanaHernadez/framework-css-effects.git"
+  },
+  "author": "Luis Ariel Retana Hernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuisArielRetanaHernadez/framework-css-effects/issues"
+  },
+  "homepage": "https://github.com/LuisArielRetanaHernadez/framework-css-effects#readme"
+}
