@@ -46,4 +46,31 @@
     }
   }
 }
-    
+
+.card-slid-diagonal {
+  @extend .card;
+  overflow: hidden;
+  position: relative;
+
+  .content-slide {
+    background-color: currentColor;
+    position: absolute;
+    left: 100%;
+    top: 100%;
+  }
+
+  &:hover .content-slide-y-t {
+    animation: slide-y-t .4s forwards;
+  }
+
+  @keyframes slide-y-t {
+    0% {
+      top: 100%;
+      left: 100%;
+    }
+    100% {
+      top: 0%;
+      left: 0%;
+    }
+  }
+}

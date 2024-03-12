@@ -141,7 +141,7 @@ summary {
   display: none;
 }
 
-.card, .flip-y, .flip-x {
+.card, .flip-y, .flip-x, .card-slid-diagonal {
   width: current;
   height: current;
   border-radius: inherit;
@@ -176,6 +176,30 @@ summary {
 }
 .flip-x:hover .flip-x__back {
   transform: rotateX(180deg);
+}
+
+.card-slid-diagonal {
+  overflow: hidden;
+  position: relative;
+}
+.card-slid-diagonal .content-slide {
+  background-color: currentColor;
+  position: absolute;
+  left: 100%;
+  top: 100%;
+}
+.card-slid-diagonal:hover .content-slide-y-t {
+  animation: slide-y-t 0.4s forwards;
+}
+@keyframes slide-y-t {
+  0% {
+    top: 100%;
+    left: 100%;
+  }
+  100% {
+    top: 0%;
+    left: 0%;
+  }
 }
 
 /*# sourceMappingURL=framework.css.map */
