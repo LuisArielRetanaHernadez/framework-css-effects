@@ -47,7 +47,6 @@ a {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
 }
 
@@ -154,21 +153,17 @@ summary {
   height: current;
   position: relative;
 }
-
 .flip-y .flip-y__front, .flip-y .flip-y__back {
   position: absolute;
   width: 100%;
   height: 100%;
 }
-
 .flip-y .flip-y__front {
   backface-visibility: hidden;
 }
-
 .flip-y:hover .flip-y__front {
   transform: rotateY(360deg);
 }
-
 .flip-y:hover .flip-y__back {
   transform: rotateY(180deg);
 }
@@ -178,23 +173,19 @@ summary {
   height: current;
   position: relative;
 }
-
 .flip-x .flip-x__front, .flip-x .flip-x__back {
   position: absolute;
   width: 100%;
   height: 100%;
 }
-
 .flip-x .flip-x__front {
   backface-visibility: hidden;
 }
-
 .flip-x:hover .flip-x__front {
   transform: rotateX(360deg);
 }
-
 .flip-x:hover .flip-x__back {
   transform: rotateX(180deg);
-} 
+}
 
 /*# sourceMappingURL=framework.css.map */
