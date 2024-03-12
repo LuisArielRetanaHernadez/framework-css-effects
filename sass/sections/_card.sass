@@ -20,3 +20,22 @@
 
     .flip-y__back 
       transform: rotateY(180deg)
+
+.flip-x
+  width: current
+  height: current
+  position: relative
+
+  .flip-x__front, .flip-x__back 
+    position: absolute
+    width: 100%
+    height: 100%
+
+  .flip-x__front 
+    backface-visibility: hidden
+  
+  &:hover 
+    .flip-x__front 
+      transform: rotateX(360deg)
+    .flip-x__back
+      transform: rotateX(180deg)
