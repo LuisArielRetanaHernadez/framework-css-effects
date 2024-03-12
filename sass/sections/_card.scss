@@ -1,7 +1,7 @@
+@forward '../global/general';
+
 .flip-y {
-  width: current;
-  height: current;
-  position: relative;
+  @extend .card;
 
   .flip-y__front, .flip-y__back { 
     position: absolute;
@@ -25,9 +25,7 @@
 }
 
 .flip-x {
-  width: current;
-  height: current;
-  position: relative;
+  @extend .card;
 
   .flip-x__front, .flip-x__back { 
     position: absolute;

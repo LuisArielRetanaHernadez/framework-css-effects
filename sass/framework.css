@@ -142,18 +142,13 @@ summary {
   display: none;
 }
 
-.card {
+.card, .flip-y, .flip-x {
   width: current;
   height: current;
   border-radius: inherit;
   background: inherit;
 }
 
-.flip-y {
-  width: current;
-  height: current;
-  position: relative;
-}
 .flip-y .flip-y__front, .flip-y .flip-y__back {
   position: absolute;
   width: 100%;
@@ -169,11 +164,6 @@ summary {
   transform: rotateY(180deg);
 }
 
-.flip-x {
-  width: current;
-  height: current;
-  position: relative;
-}
 .flip-x .flip-x__front, .flip-x .flip-x__back {
   position: absolute;
   width: 100%;
