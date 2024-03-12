@@ -1,0 +1,22 @@
+.flip-y 
+  width: current
+  height: current
+  position: relative
+
+  .flip-y__front, .flip-y__back 
+    position: absolute
+    width: 100%
+    height: 100%
+  
+
+  .flip-y__front 
+    backface-visibility: hidden
+  
+
+  &:hover 
+    .flip-y__front 
+      transform: rotateY(360deg)
+      
+
+    .flip-y__back 
+      transform: rotateY(180deg)
