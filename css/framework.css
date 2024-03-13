@@ -47,6 +47,7 @@ a {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
 }
 
@@ -148,49 +149,80 @@ summary {
   background: inherit;
 }
 
+.flip-y {
+  position: relative;
+}
+
 .flip-y .flip-y__front, .flip-y .flip-y__back {
-  position: absolute;
   width: 100%;
   height: 100%;
-}
-.flip-y .flip-y__front {
   backface-visibility: hidden;
+  position: absolute;
+  transition: all 0.3s;
 }
-.flip-y:hover .flip-y__front {
-  transform: rotateY(360deg);
+
+.flip-y .flip-y__front {
+  transform: rotateY(0deg);
 }
-.flip-y:hover .flip-y__back {
+
+.flip-y .flip-x__back {
   transform: rotateY(180deg);
 }
 
+.flip-y:hover .flip-y__front {
+  transform: rotateY(180deg);
+}
+
+.flip-y:hover .flip-y__back {
+  transform: rotateY(360deg);
+}
+
+.flip-x {
+  position: relative;
+}
+
 .flip-x .flip-x__front, .flip-x .flip-x__back {
-  position: absolute;
   width: 100%;
   height: 100%;
-}
-.flip-x .flip-x__front {
   backface-visibility: hidden;
+  position: absolute;
+  transition: all 0.3s;
 }
-.flip-x:hover .flip-x__front {
-  transform: rotateX(360deg);
+
+.flip-x .flip-x__front {
+  transform: rotateX(0deg);
 }
-.flip-x:hover .flip-x__back {
+
+.flip-x .flip-x__back {
   transform: rotateX(180deg);
+}
+
+.flip-x:hover .flip-x__front {
+  transform: rotateX(180deg);
+}
+
+.flip-x:hover .flip-x__back {
+  transform: rotateX(360deg);
 }
 
 .card-slid-diagonal {
   overflow: hidden;
   position: relative;
 }
-.card-slid-diagonal .content-slide {
+
+.card-slid-diagonal .content-slide-y-t {
+  width: 100%;
+  height: 100%;
   background-color: currentColor;
   position: absolute;
   left: 100%;
   top: 100%;
 }
+
 .card-slid-diagonal:hover .content-slide-y-t {
   animation: slide-y-t 0.4s forwards;
 }
+
 @keyframes slide-y-t {
   0% {
     top: 100%;
@@ -200,6 +232,6 @@ summary {
     top: 0%;
     left: 0%;
   }
-}
+} 
 
 /*# sourceMappingURL=framework.css.map */

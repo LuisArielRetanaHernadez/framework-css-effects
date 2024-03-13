@@ -2,47 +2,59 @@
 
 .flip-y {
   @extend .card;
-
+  position: relative;
+  
   .flip-y__front, .flip-y__back { 
-    position: absolute;
     width: 100%;
     height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: all .3s;
   }
 
   .flip-y__front { 
-    backface-visibility: hidden;
+    transform: rotateY(0deg);
+  }
+  .flip-x__back {
+    transform: rotateY(180deg);
   }
 
   &:hover { 
     .flip-y__front { 
-      transform: rotateY(360deg);
+      transform: rotateY(180deg);
     }
 
     .flip-y__back { 
-      transform: rotateY(180deg);
+      transform: rotateY(360deg);
     }
   }
 }
 
 .flip-x {
   @extend .card;
+  position: relative;
 
   .flip-x__front, .flip-x__back { 
-    position: absolute;
     width: 100%;
     height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: all .3s;
   }
 
   .flip-x__front { 
-    backface-visibility: hidden;
+    transform: rotateX(0deg);
+  }
+  .flip-x__back {
+    transform: rotateX(180deg);
   }
 
   &:hover{ 
     .flip-x__front { 
-      transform: rotateX(360deg);
+      transform: rotateX(180deg);
     }
     .flip-x__back {
-      transform: rotateX(180deg);
+      transform: rotateX(360deg);
     }
   }
 }
@@ -52,7 +64,9 @@
   overflow: hidden;
   position: relative;
 
-  .content-slide {
+  .content-slide-y-t {
+    width: 100%;
+    height: 100%;
     background-color: currentColor;
     position: absolute;
     left: 100%;

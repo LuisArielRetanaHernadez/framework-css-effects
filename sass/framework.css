@@ -149,41 +149,59 @@ summary {
   background: inherit;
 }
 
+.flip-y {
+  position: relative;
+}
 .flip-y .flip-y__front, .flip-y .flip-y__back {
-  position: absolute;
   width: 100%;
   height: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: all 0.3s;
 }
 .flip-y .flip-y__front {
-  backface-visibility: hidden;
+  transform: rotateY(0deg);
 }
-.flip-y:hover .flip-y__front {
-  transform: rotateY(360deg);
-}
-.flip-y:hover .flip-y__back {
+.flip-y .flip-x__back {
   transform: rotateY(180deg);
 }
+.flip-y:hover .flip-y__front {
+  transform: rotateY(180deg);
+}
+.flip-y:hover .flip-y__back {
+  transform: rotateY(360deg);
+}
 
+.flip-x {
+  position: relative;
+}
 .flip-x .flip-x__front, .flip-x .flip-x__back {
-  position: absolute;
   width: 100%;
   height: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: all 0.3s;
 }
 .flip-x .flip-x__front {
-  backface-visibility: hidden;
+  transform: rotateX(0deg);
+}
+.flip-x .flip-x__back {
+  transform: rotateX(180deg);
 }
 .flip-x:hover .flip-x__front {
-  transform: rotateX(360deg);
+  transform: rotateX(180deg);
 }
 .flip-x:hover .flip-x__back {
-  transform: rotateX(180deg);
+  transform: rotateX(360deg);
 }
 
 .card-slid-diagonal {
   overflow: hidden;
   position: relative;
 }
-.card-slid-diagonal .content-slide {
+.card-slid-diagonal .content-slide-y-t {
+  width: 100%;
+  height: 100%;
   background-color: currentColor;
   position: absolute;
   left: 100%;
