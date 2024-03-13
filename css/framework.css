@@ -141,7 +141,7 @@ summary {
   display: none;
 }
 
-.card, .flip-y, .flip-x, .card-slid-diagonal, .card-spontiando {
+.card, .flip-y, .flip-x, .card-slid-diagonal, .card-spontiando, .card-img-more {
   width: current;
   height: current;
   border-radius: inherit;
@@ -241,6 +241,38 @@ summary {
     height: 100%;
     visibility: visible;
   }
+}
+
+.card-img-more {
+  width: inherit;
+  height: inherit;
+  position: relative;
+}
+.card-img-more .card__img {
+  width: 75%;
+  height: 150px;
+  background: red;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50px);
+}
+.card-img-more .card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-img-more .content {
+  opacity: 0;
+  position: absolute;
+  transform: translateY(-100px);
+  transition: all 0.4s;
+}
+.card-img-more:hover {
+  height: 350px;
+}
+.card-img-more:hover .content {
+  opacity: 1;
+  transform: translateY(150px);
 }
 
 /*# sourceMappingURL=framework.css.map */
