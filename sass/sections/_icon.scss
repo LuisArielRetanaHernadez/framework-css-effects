@@ -9,6 +9,10 @@
   position: relative;
   transition: all .3s;
 
+  & img {
+    font-size: 1.2rem;
+  }
+
   &:hover {
     transform: scale(2);
   }
@@ -65,6 +69,10 @@
   @extend .icon;
   border: 1px solid #008DDA;
   border-radius: 50px;
+
+  & img {
+    font-size: 1.2rem;
+  }
 
   &::before {
     content: '';

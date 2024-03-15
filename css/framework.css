@@ -321,6 +321,9 @@ summary {
   position: relative;
   transition: all 0.3s;
 }
+.icon-box img {
+  font-size: 1.2rem;
+}
 .icon-box:hover {
   transform: scale(2);
 }
@@ -367,6 +370,9 @@ summary {
 .icon-spontiando {
   border: 1px solid #008DDA;
   border-radius: 50px;
+}
+.icon-spontiando img {
+  font-size: 1.2rem;
 }
 .icon-spontiando::before {
   content: "";
