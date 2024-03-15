@@ -106,3 +106,40 @@
     }
   }
 }
+
+.card__border-primary {
+  @extend .card;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  &::before {
+    content: '';
+    border-radius: inherit;
+    background: white;
+    position: absolute;
+    inset: 3px;
+    z-index: 1;
+  }
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 200%;
+    border-radius: inherit;
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    position: absolute;
+    animation: rotate-element .8s linear infinite;
+  }
+
+  @keyframes rotate-element{
+    0% {
+      transform: rotate(0deg)
+    }
+    100% {
+      transform: rotate(360deg)
+    }
+  }
+}
