@@ -108,7 +108,7 @@
 }
 
 .card__border-primary {
-  @extend .card;
+  @extend .icon;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -174,4 +174,4 @@
     }
   }
 
-}
+} 
