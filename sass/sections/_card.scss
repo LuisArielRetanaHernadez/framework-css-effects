@@ -1,15 +1,19 @@
 @forward '../global/general';
 
+%flip-common {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: all .3s;
+}
+
 .flip-y {
   @extend .card;
   position: relative;
   
   .flip-y__front, .flip-y__back { 
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    position: absolute;
-    transition: all .3s;
+    @extend %flip-common
   }
 
   .flip-y__front { 
@@ -35,11 +39,7 @@
   position: relative;
 
   .flip-x__front, .flip-x__back { 
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    position: absolute;
-    transition: all .3s;
+    @extend %flip-common
   }
 
   .flip-x__front { 
