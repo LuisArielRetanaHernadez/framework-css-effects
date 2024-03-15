@@ -10,7 +10,7 @@
   transition: all .3s;
 
   &:hover {
-    width: initial * 2;
+    transform: scale(2);
   }
 
   &::before {
@@ -59,4 +59,42 @@
     transform: scale(1);
   }
 
+}
+
+.icon-spontiando {
+  @extend .icon;
+  border: 1px solid #008DDA;
+  border-radius: 50px;
+
+  &::before {
+    content: '';
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    position: absolute;
+    transform: translateY(-200%);
+    z-index: -1;
+    transition: all .3s;
+  }
+
+  &:hover::before {
+    animation: show-icon .5s forwards;
+  }
+
+  @keyframes show-icon {
+    0% {
+      transform: translateY(-200%);
+    }
+  
+    90% {
+      transform: translateY(0%);
+    }
+  
+    100% {
+      transform: translateY(0%) scale(2);
+  
+    }
+  }
 }

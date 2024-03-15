@@ -148,6 +148,14 @@ summary {
   background: inherit;
 }
 
+.icon {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+}
+
 .flip-y {
   position: relative;
 }
@@ -306,6 +314,91 @@ summary {
   position: absolute;
   inset: 8px;
   transition: all 0.1s;
+}
+
+.icon-box {
+  width: initial;
+  height: initial;
+  border: initial;
+  border-radius: initial;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.3s;
+}
+.icon-box:hover {
+  transform: scale(2);
+}
+.icon-box::before {
+  content: "";
+  background-color: #00DBDE;
+  background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+  opacity: 0;
+  position: absolute;
+  inset: 0;
+  transition: all 0.4s;
+}
+.icon-box:hover::before {
+  opacity: 1;
+}
+.icon-box::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #00DBDE;
+  background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+  opacity: 0;
+  position: absolute;
+  top: 10px;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.icon-box:hover::after {
+  opacity: 1;
+}
+.icon-box .icon, .icon-box .icon-spontiando, .icon-box .icon-text {
+  color: initial;
+  position: absolute;
+  transition: all 0.3s;
+  font-size: 1.4rem;
+}
+.icon-box .icon-text {
+  transform: scale(0);
+}
+.icon-box .icon, .icon-box .icon-spontiando {
+  transform: scale(1);
+}
+
+.icon-spontiando {
+  border: 1px solid #008DDA;
+  border-radius: 50px;
+}
+.icon-spontiando::before {
+  content: "";
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background-color: #00DBDE;
+  background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+  position: absolute;
+  transform: translateY(-200%);
+  z-index: -1;
+  transition: all 0.3s;
+}
+.icon-spontiando:hover::before {
+  animation: show-icon 0.5s forwards;
+}
+@keyframes show-icon {
+  0% {
+    transform: translateY(-200%);
+  }
+  90% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(0%) scale(2);
+  }
 }
 
 /*# sourceMappingURL=framework.css.map */
