@@ -1,3 +1,9 @@
+body, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
 }
@@ -13,6 +19,7 @@ a {
 }
 
 .menu {
+  height: 80px;
   padding: 0.5rem;
 }
 
@@ -37,6 +44,10 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.justity-between {
+  justify-content: space-between;
 }
 
 .button {
