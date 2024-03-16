@@ -1,0 +1,74 @@
+body, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapped {
+  width: auto;
+  height: auto;
+}
+
+.menu {
+  height: 80px;
+  padding: 0.5rem;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.menu__item {
+  display: inline-block;
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  font-weight: 800;
+  padding: 0.4rem 0.5rem;
+  border-radius: 10px;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.justity-between {
+  justify-content: space-between;
+}
+
+.button {
+  padding: 0.3rem 0.4rem;
+  color: #FF204E;
+  background-color: #00224D;
+}
+
+.card {
+  width: 20%;
+  max-min: 250px;
+  height: 200px;
+}
+
+.footer {
+  padding: 1.2rem;
+  background-color: #00224D;
+}
+
+/*# sourceMappingURL=page.css.map */
