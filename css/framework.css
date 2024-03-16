@@ -145,7 +145,6 @@ summary {
   width: current;
   height: current;
   border-radius: inherit;
-  background: inherit;
 }
 
 .icon {
@@ -170,7 +169,7 @@ summary {
 .flip-y .flip-y__front {
   transform: rotateY(0deg);
 }
-.flip-y .flip-x__back {
+.flip-y .flip-y__back {
   transform: rotateY(180deg);
 }
 .flip-y:hover .flip-y__front {
