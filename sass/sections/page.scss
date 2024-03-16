@@ -4,6 +4,10 @@ body, * {
   box-sizing: border-box;
 }
 
+body {
+  height: 100vh;
+}
+
 a {
   text-decoration: none;
 }
@@ -56,6 +60,13 @@ a {
   background-color: #00224D;
 }
 
+// card fizes
+
+.card {
+  width: 20%;
+  max-min: 250px;
+  height: 200px;
+}
 // footer 
 
 .footer {
