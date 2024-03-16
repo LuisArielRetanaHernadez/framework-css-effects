@@ -38,6 +38,7 @@ a {
 .menu {
   height: 80px;
   padding: .5rem;
+  background-color: $blue-darling;
 }
 
 .menu__list {
@@ -51,10 +52,12 @@ a {
 }
 
 .menu__link {
-  font-size: 1.2rem;
-  font-weight: 800;
   padding: .4rem .5rem;
   border-radius: 10px; 
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: $white;
 }
 
 .flex-center {
