@@ -185,9 +185,11 @@ summary {
   position: relative;
 }
 .flip-x .flip-x__front {
+  background-color: #D63484;
   transform: rotateX(0deg);
 }
 .flip-x .flip-x__back {
+  background-color: #FF204E;
   transform: rotateX(180deg);
 }
 .flip-x:hover .flip-x__front {
