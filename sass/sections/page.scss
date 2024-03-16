@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
 $font-ubunto: "Ubuntu Condensed", sans-serif;
 
+$blue-darling: #00224D;
+$white: #FFFF;
+$BLACK: #0000;
+
 body, * {
   margin: 0;
   padding: 0;
@@ -28,6 +32,8 @@ a {
   width: auto;
   height: auto;
 }
+
+// menu
 
 .menu {
   height: 80px;
