@@ -17,9 +17,11 @@
   }
 
   .flip-y__front { 
+    background-color: #FF204E;
     transform: rotateY(0deg);
   }
   .flip-y__back {
+    background-color: #D63484;
     transform: rotateY(180deg);
   }
 
