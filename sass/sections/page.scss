@@ -76,6 +76,20 @@ a {
   background-color: #00224D;
 }
 
+// grid
+
+.grid {
+  display: grid;
+}
+
+.col-auto-fill-250-fr {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.row-auto-250 {
+  grid-auto-rows: 250px;
+}
+
 // card fizes
 
 .card {
