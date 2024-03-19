@@ -8,6 +8,10 @@
   margin: auto;
 }
 
+.mb-10 {
+  margin-bottom: 10px;
+}
+
 .gap-10 {
   gap: 10px;
 }
