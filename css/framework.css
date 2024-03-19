@@ -147,7 +147,7 @@ summary {
   border-radius: inherit;
 }
 
-.icon {
+.icon, .icon-spontiando, .card__border-primary, .icon-beat {
   width: 50px;
   height: 50px;
   cursor: pointer;
@@ -323,8 +323,6 @@ summary {
 }
 
 .icon-box {
-  width: initial;
-  height: initial;
   border: initial;
   border-radius: initial;
   display: flex;
@@ -380,10 +378,16 @@ summary {
 }
 
 .icon-spontiando {
-  border: 1px solid #008DDA;
   border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 .icon-spontiando img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
   font-size: 1.2rem;
 }
 .icon-spontiando::before {
@@ -394,7 +398,9 @@ summary {
   background-color: #00DBDE;
   background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
   position: absolute;
-  transform: translateY(-200%);
+  transform: translate(-50%, -200%) scale(1);
+  left: 50%;
+  top: 50%;
   z-index: -1;
   transition: all 0.3s;
 }
@@ -403,13 +409,13 @@ summary {
 }
 @keyframes show-icon {
   0% {
-    transform: translateY(-200%);
+    transform: translate(-50%, -200%) scale(1);
   }
   90% {
-    transform: translateY(0%);
+    transform: translate(-50%, -50%);
   }
   100% {
-    transform: translateY(0%) scale(2);
+    transform: translate(-50%, -50%) scale(2);
   }
 }
 
@@ -419,7 +425,13 @@ summary {
   align-items: center;
   justify-content: center;
 }
-.card__border-primary::before {
+.card__border-primary img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  font-size: 1.2rem;
+}
+.card__border-primary .content {
   content: "";
   border-radius: inherit;
   background: white;
@@ -450,6 +462,12 @@ summary {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.icon-beat img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  font-size: 1.2rem;
 }
 .icon-beat:hover {
   animation: beat-beat 0.5s forwards;
