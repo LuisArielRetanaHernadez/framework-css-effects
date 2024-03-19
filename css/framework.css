@@ -255,9 +255,10 @@ summary {
 }
 
 .card-img-more {
-  width: inherit;
-  height: inherit;
+  height: 50%;
+  background-color: #D63484;
   position: relative;
+  transition: all 0.4s;
 }
 .card-img-more .card__img {
   width: 75%;
@@ -273,13 +274,14 @@ summary {
   object-fit: cover;
 }
 .card-img-more .content {
+  width: 100%;
   opacity: 0;
   position: absolute;
   transform: translateY(-100px);
   transition: all 0.4s;
 }
 .card-img-more:hover {
-  height: 350px;
+  height: 100%;
 }
 .card-img-more:hover .content {
   opacity: 1;

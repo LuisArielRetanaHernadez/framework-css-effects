@@ -131,9 +131,11 @@
 
 .card-img-more {
   @extend .card;
-  width: inherit;
-  height: inherit;
+  height: 50%;
+  background-color: #D63484;
   position: relative;
+  transition: all .4s;
+
 
   .card__img {
     width: 75%;
@@ -150,7 +152,8 @@
     object-fit: cover;
   }
 
-  .content {
+  & .content {
+    width: 100%;
     opacity: 0;
     position: absolute;
     transform: translateY(-100px);
@@ -159,7 +162,7 @@
   
   
   &:hover {
-    height: 350px
+    height: 100%
   }
 
   &:hover .content {
