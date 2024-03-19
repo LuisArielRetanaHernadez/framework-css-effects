@@ -16,6 +16,10 @@
   gap: 10px;
 }
 
+.flex {
+  display: flex;
+}
+
 body, * {
   margin: 0;
   padding: 0;
