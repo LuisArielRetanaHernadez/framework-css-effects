@@ -1,7 +1,8 @@
+@forward '../global/_utils.scss'; 
+
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Ubuntu+Condensed&display=swap');
 
-@import url('../global/utils'); 
 
 $font-ubunto: "Ubuntu Condensed", sans-serif;
 $font-grotesk: "Familjen Grotesk", sans-serif;
@@ -34,6 +35,8 @@ a {
   // background-color: red;
 }
 
+// ----- wrapped ----
+
 .wrapped {
   width: auto;
   height: auto;
@@ -43,6 +46,8 @@ a {
   @extend .wrapped;
   width: 80%;
 }
+
+// ----- box-texts -----
 
 .box-texts {
   display: flex;
@@ -59,7 +64,7 @@ a {
   }
 }
 
-// menu
+// ----- menu -----
 
 .menu {
   height: 80px;
@@ -86,6 +91,8 @@ a {
   color: $white;
 }
 
+// ---- flex ----
+
 .flex-center {
   display: flex;
   align-items: center;
@@ -96,13 +103,15 @@ a {
   justify-content: space-between;
 }
 
+// ---- buttons ---
+
 .button {
   padding: .3rem .4rem;
   color: #FF204E;
   background-color: #00224D;
 }
 
-// titles
+// ----- titles -----
 
 .title-midum {
   font-size: 2rem;
@@ -110,17 +119,8 @@ a {
   letter-spacing: 1px;
 }
 
-// text
 
-.text-center {
-  text-align: center;
-}
-
-.m-auto {
-  margin: auto;
-}
-
-// grid
+// ------ grid ------
 
 .grid {
   display: grid;
@@ -138,10 +138,7 @@ a {
   grid-auto-rows: 250px;
 }
 
-.gap-10 {
-  gap: 10px;
-}
-// footer 
+// ----- footer -----
 
 .footer {
   width: 100%;
