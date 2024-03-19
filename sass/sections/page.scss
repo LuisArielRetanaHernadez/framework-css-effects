@@ -37,6 +37,26 @@ a {
   height: auto;
 }
 
+.wrapped--medium {
+  @extend .wrapped;
+  width: 80%;
+}
+
+.box-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @each $tag in p, h1, h2, h3, h4, h5, h6 {
+    #{$tag}::first-letter {
+      text-transform: uppercase;
+      font: {
+        weight: 700;
+      }
+    }
+  }
+}
+
 // menu
 
 .menu {
@@ -92,6 +112,10 @@ a {
 
 .text-center {
   text-align: center;
+}
+
+.m-auto {
+  margin: auto;
 }
 
 // grid

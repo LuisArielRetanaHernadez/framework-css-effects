@@ -20,9 +20,47 @@ a {
   height: 100%;
 }
 
-.wrapped {
+.wrapped, .wrapped--medium {
   width: auto;
   height: auto;
+}
+
+.wrapped--medium {
+  width: 80%;
+}
+
+.box-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.box-texts p::first-letter {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.box-texts h1::first-letter {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.box-texts h2::first-letter {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.box-texts h3::first-letter {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.box-texts h4::first-letter {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.box-texts h5::first-letter {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.box-texts h6::first-letter {
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .menu {
@@ -74,6 +112,10 @@ a {
 
 .text-center {
   text-align: center;
+}
+
+.m-auto {
+  margin: auto;
 }
 
 .grid {
