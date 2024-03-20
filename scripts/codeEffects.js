@@ -1,4 +1,4 @@
-const stylesEffects = [
+export const stylesEffects = [
   {
     effect: 'flip-y',
     code: `
@@ -15,6 +15,8 @@ const stylesEffects = [
   },
   {
     effect: 'flip-x',
+    title: 'flip-x',
+    description: 'Esta card hace que de un efecto de carta que gira asi el eje y para mostrar el contenido del otro lado',
     code: `
     <div class="flip-y">
       <div class="flip-y__front">
