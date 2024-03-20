@@ -20,7 +20,9 @@ const templateMobal = (...arg) => {
     <div>
       <div>
         <span>copy</span>
-        <img src="${arg.img}" alt="">
+        <code>
+          ${arg.code}
+        </code>
       </div>
       <div>
         <h1>${arg.title}</h1>
